@@ -257,6 +257,7 @@ class PreconditionerOptions:
     pc_epsilon_32: float = 1e-5
     pc_epsilon_64: float = 1e-13
     cpu_preconditioner: bool = False
+    m0: int = 25_000
 
     def pc_epsilon(self, dtype):
         if dtype == torch.float32:
@@ -271,6 +272,7 @@ class PreconditionerOptions:
             pc_epsilon_32=self.pc_epsilon_32,
             pc_epsilon_64=self.pc_epsilon_64,
             cpu_preconditioner=self.cpu_preconditioner,
+            m0=self.m0
         )
 
 
