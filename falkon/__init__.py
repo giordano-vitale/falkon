@@ -10,7 +10,7 @@ from . import (  # isort:skip
     gsc_losses,
     hopt,
 )
-from .models import Falkon, InCoreFalkon, LogisticFalkon  # isort:skip
+from .models import Falkon, InCoreFalkon, LogisticFalkon, Balkon  # isort:skip
 
 # Set __version__ attribute on the package
 init_dir = os.path.dirname(os.path.abspath(__file__))
@@ -19,6 +19,7 @@ with open(os.path.join(init_dir, "VERSION")) as version_file:
 
 __all__ = (
     "Falkon",
+    "Balkon",
     "LogisticFalkon",
     "InCoreFalkon",
     "FalkonOptions",

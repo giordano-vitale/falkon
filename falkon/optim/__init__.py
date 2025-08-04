@@ -1,3 +1,3 @@
-from .conjgrad import ConjugateGradient, FalkonConjugateGradient, Optimizer
+from .conjgrad import ConjugateGradient, FalkonConjugateGradient, Optimizer, BalkonConjugateGradient
 
-__all__ = ("Optimizer", "ConjugateGradient", "FalkonConjugateGradient")
+__all__ = ("Optimizer", "ConjugateGradient", "FalkonConjugateGradient", "BalkonConjugateGradient")
