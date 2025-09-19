@@ -196,11 +196,15 @@ class Balkon(FalkonBase):
                 optim_dev_str = "CPU" if o_opt.use_cpu else f"{self.num_gpus} GPUs"
                 print(f"Optimizer will run on {optim_dev_str}", flush=True)
             optim = falkon.optim.BalkonConjugateGradient(kernel, self.precond, o_opt, weight_fn=self.weight_fn)
-            beta = optim.solve(
+            #  beta = optim.solve(
+            #      X, ny_pts, Y, self.penalty, initial_solution=warm_start, max_iter=self.maxiter, callback=cb
+            #  )
+            alpha = optim.solve(
                 X, ny_pts, Y, self.penalty, initial_solution=warm_start, max_iter=self.maxiter, callback=cb
             )
-            alpha = self.precond.apply(beta)
-        return alpha, beta
+
+            #  alpha = self.precond.apply(beta)
+        return alpha#, beta
 
     def fit(
         self,
@@ -293,8 +297,10 @@ class Balkon(FalkonBase):
             if self.error_fn is not None and self.error_every is not None:
                 validation_cback = self._get_callback_fn(X, Y, Xts, Yts, ny_points, self.precond)
 
-            alpha, beta = self.run_solver(_use_cuda_mmv, calc_kernel, X, Y, ny_points, warm_start, validation_cback)
-            self.alpha_, self.beta_, self.ny_points_ = alpha, beta, ny_points
+            # alpha, beta = self.run_solver(_use_cuda_mmv, calc_kernel, X, Y, ny_points, warm_start, validation_cback)
+            alpha = self.run_solver(_use_cuda_mmv, calc_kernel, X, Y, ny_points, warm_start, validation_cback)
+            # self.alpha_, self.beta_, self.ny_points_ = alpha, beta, ny_points
+            self.alpha_, self.ny_points_ = alpha, ny_points
         return self
 
     def _predict(self, X, ny_points, alpha: torch.Tensor) -> torch.Tensor:

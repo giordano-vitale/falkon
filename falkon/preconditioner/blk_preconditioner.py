@@ -396,5 +396,34 @@ class BalkonPreconditioner(Preconditioner):
 
         return v
 
+
+
+    def full_application(self, v: torch.Tensor) -> torch.Tensor:
+        M = self.X_nys.shape[0]
+        num_blocks = M // self.m0
+
+        eps = self.params.pc_epsilon(self.X_nys.dtype)
+
+        for i in range(num_blocks):
+            i_start = i * self.m0
+            i_end = (i + 1) * self.m0
+
+            C, dA, dT = self._build_block(self.X_nys[i_start:i_end], eps)
+
+            inplace_set_diag_th(C, dT)
+            v[i_start:i_end] = trsm(v[i_start:i_end], C, alpha=1.0, lower=0, transpose=1)
+
+            inplace_set_diag_th(C, dA)
+            v[i_start:i_end] = trsm(v[i_start:i_end], C, alpha=1.0, lower=1, transpose=0)
+
+            # inplace_set_diag_th(C, dA)
+            v[i_start:i_end] = trsm(v[i_start:i_end], C, alpha=1.0, lower=1, transpose=1)
+
+            inplace_set_diag_th(C, dT)
+            v[i_start:i_end] = trsm(v[i_start:i_end], C, alpha=1.0, lower=0, transpose=0)
+
+        return v
+
+
     def __str__(self):
         return f"FalkonPreconditioner(_lambda={self._lambda}, kernel={self.kernel})"
