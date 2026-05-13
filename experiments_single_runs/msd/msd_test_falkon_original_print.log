@@ -1,0 +1,21 @@
+The experiment began on: 2026-05-12 11:24:46
+Loaded MillionSongs dataset in torch.float64 precision.
+Split the data into 463715 training, 51630 validation points of dimension 90.
+Data-preprocessing completed.
+Iteration 1 completed
+Iteration 2 completed
+Iteration 3 completed
+Iteration 4 completed
+Iteration 5 completed
+Iteration 6 completed
+Iteration 7 completed
+Iteration 8 completed
+Iteration 9 completed
+Iteration 10 completed
+Precision: torch.float64
+max_it = 10
+m = 50000
+Training time: 87.35896253585815 seconds
+MSE: 0.657914658011352
+Relative Error: 0.004475709214651574
+The experiment ended on: 2026-05-12 11:28:35

@@ -1,0 +1,76 @@
+The experiment began on: 2026-05-13 08:31:31
+Loaded FLIGHTS dataset in torch.float64 precision.
+Split the data into 3948732 training, 1980296 validation points of dimension 8.
+Data-preprocessing completed.
+Iteration 1 completed
+Iteration 2 completed
+Iteration 3 completed
+Iteration 4 completed
+Iteration 5 completed
+Iteration 6 completed
+Iteration 7 completed
+Iteration 8 completed
+Iteration 9 completed
+Iteration 10 completed
+Iteration 11 completed
+Iteration 12 completed
+Iteration 13 completed
+Iteration 14 completed
+Iteration 15 completed
+Iteration 16 completed
+Iteration 17 completed
+Iteration 18 completed
+Iteration 19 completed
+Iteration 20 completed
+Precision: torch.float64
+max_it = 20
+m = 800000
+m0 = 100000
+Preconditioning: Left
+Training time: 15872.23672747612 seconds
+Inference time on the test set: 32.80919575691223 seconds
+MSE: 0.7532843790889998
+MSE evolution during the iterations
+ITERATION 0
+MSE: 1.0096332550145553
+ITERATION 1
+MSE: 0.9546381812018667
+ITERATION 2
+MSE: 0.8885517546752305
+ITERATION 3
+MSE: 0.8312803925660289
+ITERATION 4
+MSE: 0.8071831859459877
+ITERATION 5
+MSE: 0.7886649699186634
+ITERATION 6
+MSE: 0.7788136454249789
+ITERATION 7
+MSE: 0.7713259339825118
+ITERATION 8
+MSE: 0.7660233207377588
+ITERATION 9
+MSE: 0.7623449489709643
+ITERATION 10
+MSE: 0.7601554442011969
+ITERATION 11
+MSE: 0.7582014155658204
+ITERATION 12
+MSE: 0.75709972790641
+ITERATION 13
+MSE: 0.7561659132839579
+ITERATION 14
+MSE: 0.755833825028113
+ITERATION 15
+MSE: 0.7550783095653729
+ITERATION 16
+MSE: 0.7545665776123841
+ITERATION 17
+MSE: 0.753996318553922
+ITERATION 18
+MSE: 0.7538219340257754
+ITERATION 19
+MSE: 0.7536259364922245
+ITERATION 20
+MSE: 0.7532843790889998
+The experiment ended on: 2026-05-13 13:10:16

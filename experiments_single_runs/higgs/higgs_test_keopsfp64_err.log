@@ -1,0 +1,4 @@
+/leonardo_work/IscrC_GOLD-FM_0/flkvenv/lib/python3.11/site-packages/torch/cuda/__init__.py:1061: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+[W505 22:47:28.102514433 CublasHandlePool.cpp:335] Warning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (function operator())
+slurmstepd: error: *** JOB 40842965 ON lrdn1482 CANCELLED AT 2026-05-06T04:46:14 DUE TO TIME LIMIT ***

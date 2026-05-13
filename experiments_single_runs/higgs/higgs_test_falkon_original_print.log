@@ -1,0 +1,38 @@
+The experiment began on: 2026-05-13 01:20:45
+Loaded HIGGS dataset in torch.float64 precision.
+Split the data into 8800000 training, 2200000 validation points of dimension 28.
+Data-preprocessing completed.
+[KeOps] Compiling cuda jit compiler engine ... OK
+[pyKeOps] Compiling nvrtc binder for python ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... OK
+OK
+OK
+OK
+Iteration 1 completed
+Iteration 2 completed
+Iteration 3 completed
+Iteration 4 completed
+Iteration 5 completed
+Iteration 6 completed
+Iteration 7 completed
+Iteration 8 completed
+Iteration 9 completed
+Iteration 10 completed
+Iteration 11 completed
+Iteration 12 completed
+Iteration 13 completed
+Iteration 14 completed
+Iteration 15 completed
+Iteration 16 completed
+Iteration 17 completed
+Iteration 18 completed
+Iteration 19 completed
+Iteration 20 completed
+Precision: torch.float64
+max_it = 20
+m = 100000
+Training time: 4576.303251504898 seconds
+Inference time on the test set: 15.55495309829712 seconds
+ROC AUC: 0.8217088235220102
+Accuracy: 0.7444309090909091
+The experiment ended on: 2026-05-13 02:39:40

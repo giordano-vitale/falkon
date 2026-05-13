@@ -1,0 +1,31 @@
+The experiment began on: 2026-05-13 01:21:18
+Loaded FLIGHTS dataset in torch.float64 precision.
+Split the data into 3948732 training, 1980296 validation points of dimension 8.
+Data-preprocessing completed.
+Iteration 1 completed
+Iteration 2 completed
+Iteration 3 completed
+Iteration 4 completed
+Iteration 5 completed
+Iteration 6 completed
+Iteration 7 completed
+Iteration 8 completed
+Iteration 9 completed
+Iteration 10 completed
+Iteration 11 completed
+Iteration 12 completed
+Iteration 13 completed
+Iteration 14 completed
+Iteration 15 completed
+Iteration 16 completed
+Iteration 17 completed
+Iteration 18 completed
+Iteration 19 completed
+Iteration 20 completed
+Precision: torch.float64
+max_it = 20
+m = 100000
+Training time: 637.134575843811 seconds
+Inference time on the test set: 4.039561033248901 seconds
+MSE: 0.7578334331032092
+The experiment ended on: 2026-05-13 01:34:01

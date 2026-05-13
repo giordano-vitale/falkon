@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/utils/threading.py", line 16, in run
+    self.ret = self._target(*self._args, **self._kwargs)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/mmv_ops/fmmv.py", line 593, in dmmv_run_starter
+    dmmv_run_thread(
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/mmv_ops/fmmv.py", line 709, in dmmv_run_thread
+    flat_gpu = torch.empty(size=(mem_needed,), dtype=m1.dtype, device=dev)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 56.00 GiB. GPU 1 has a total capacity of 63.42 GiB of which 43.37 GiB is free. Including non-PyTorch memory, this process has 19.79 GiB memory in use. Of the allocated memory 222.43 MiB is allocated by PyTorch, and 18.96 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/experiments_single_runs/higgs/balkon_test_higgs.py", line 70, in <module>
+    blk.fit(Xtr,Ytr)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/models/balkon.py", line 304, in fit
+    alpha, beta, model_evolution = self.run_solver(_use_cuda_mmv, calc_kernel, X, Y, ny_points, warm_start, validation_cback)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/models/balkon.py", line 199, in run_solver
+    beta, model_evolution = optim.solve(
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/optim/conjgrad.py", line 610, in solve
+    beta, model_evolution = self.optimizer.solve(initial_solution, B, mmv, max_iter, callback)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/optim/conjgrad.py", line 133, in solve
+    AP = mmv(P)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/optim/conjgrad.py", line 541, in balkon_mmv
+    cc = self.kernel.dmmv(X, M, v_t, None, opt=self.params)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/kernels/diff_kernel.py", line 145, in dmmv
+    return dmmv_impl(X1, X2, v, w, self, out, diff, params)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/mmv_ops/fmmv.py", line 1118, in fdmmv
+    _start_wait_processes(dmmv_run_starter, args)
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/mmv_ops/utils.py", line 78, in _start_wait_processes
+    outputs.extend([p.join() for p in processes])
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/mmv_ops/utils.py", line 78, in <listcomp>
+    outputs.extend([p.join() for p in processes])
+  File "/leonardo/home/userexternal/gvitale0/falkon_original_library/falkon/falkon/utils/threading.py", line 23, in join
+    raise RuntimeError(f"Exception in thread {self.name}") from self.exc
+RuntimeError: Exception in thread GPU-1

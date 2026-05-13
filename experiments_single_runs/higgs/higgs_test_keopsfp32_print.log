@@ -1,0 +1,103 @@
+The experiment began on: 2026-05-05 15:45:16
+Loaded HIGGS dataset in torch.float32 precision.
+Split the data into 8800000 training, 2200000 validation points of dimension 28.
+Data-preprocessing completed.
+[KeOps] Compiling cuda jit compiler engine ... OK
+[pyKeOps] Compiling nvrtc binder for python ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... OK
+OK
+OK
+OK
+Iteration 1 completed
+Iteration 2 completed
+Iteration 3 completed
+Iteration 4 completed
+Iteration 5 completed
+Iteration 6 completed
+Iteration 7 completed
+Iteration 8 completed
+Iteration 9 completed
+Iteration 10 completed
+Iteration 11 completed
+Iteration 12 completed
+Iteration 13 completed
+Iteration 14 completed
+Iteration 15 completed
+Iteration 16 completed
+Iteration 17 completed
+Iteration 18 completed
+Iteration 19 completed
+Iteration 20 completed
+Precision: torch.float32
+max_it = 20
+m = 2000
+m0 = 500
+Preconditioning: Left
+Training time: 225.17667889595032 seconds
+ROC AUC: 0.7730885266381095
+Accuracy: 0.7056345454545454
+ROC AUC and Accuracy evolution during the iterations
+ITERATION 0
+ROC AUC: 0.5
+Accuracy: 0.0
+ITERATION 1
+ROC AUC: 0.725805378205008
+Accuracy: 0.673985
+ITERATION 2
+ROC AUC: 0.742865575537816
+Accuracy: 0.6853022727272727
+ITERATION 3
+ROC AUC: 0.7505841161409181
+Accuracy: 0.6889409090909091
+ITERATION 4
+ROC AUC: 0.7564373452071433
+Accuracy: 0.6935254545454546
+ITERATION 5
+ROC AUC: 0.7596435026337234
+Accuracy: 0.6957854545454546
+ITERATION 6
+ROC AUC: 0.7622430818768006
+Accuracy: 0.697675
+ITERATION 7
+ROC AUC: 0.7637616955809121
+Accuracy: 0.6989431818181818
+ITERATION 8
+ROC AUC: 0.7653375772455295
+Accuracy: 0.6997659090909091
+ITERATION 9
+ROC AUC: 0.7664383497408336
+Accuracy: 0.70116
+ITERATION 10
+ROC AUC: 0.7674339790652336
+Accuracy: 0.7012663636363636
+ITERATION 11
+ROC AUC: 0.768441767784111
+Accuracy: 0.7023095454545455
+ITERATION 12
+ROC AUC: 0.7691108677417352
+Accuracy: 0.7025836363636364
+ITERATION 13
+ROC AUC: 0.7697574450663792
+Accuracy: 0.7029172727272728
+ITERATION 14
+ROC AUC: 0.7704837611318711
+Accuracy: 0.7036281818181818
+ITERATION 15
+ROC AUC: 0.7710257407839054
+Accuracy: 0.7040622727272727
+ITERATION 16
+ROC AUC: 0.7715733523377855
+Accuracy: 0.7043618181818182
+ITERATION 17
+ROC AUC: 0.7720338152925293
+Accuracy: 0.7050472727272727
+ITERATION 18
+ROC AUC: 0.7723957355077007
+Accuracy: 0.7050836363636364
+ITERATION 19
+ROC AUC: 0.7727442452386266
+Accuracy: 0.70527
+ITERATION 20
+ROC AUC: 0.7730885266381095
+Accuracy: 0.7056345454545454
+The experiment ended on: 2026-05-05 15:51:03

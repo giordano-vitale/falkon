@@ -1,0 +1,207 @@
+The experiment began on: 2026-03-24 16:28:51
+Loaded HIGGS dataset in torch.float32 precision.
+Split the data into 8800000 training, 2200000 validation points of dimension 28.
+Data-preprocessing completed.
+MainProcess.MainThread::[Calcuating Preconditioner of size 800000]
+Preconditioner will run on 4 GPUs
+MainProcess.MainThread::[Calcuating Preconditioner of size 800000] complete in 0.000s
+MainProcess.MainThread::[Computing Falkon iterations]
+Optimizer will run on 4 GPUs
+--MainProcess.MainThread::[ConjGrad]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 32.955s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.975s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 12.020s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.865s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.668s
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 32.948s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.890s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 11.752s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 9.241s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.607s
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 12.974s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.924s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 12.083s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.736s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.691s
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 12.946s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.872s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 12.287s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.488s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.539s
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.277s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.932s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 11.710s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.488s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.622s
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.131s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.876s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 11.678s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 8.623s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.559s
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.006s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.932s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 11.843s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 8.161s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.651s
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+----MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.244s
+----MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 1] complete in 18.878s
+----MainProcess.MainThread::[Copy triangular]
+----MainProcess.MainThread::[Copy triangular] complete in 11.658s
+----MainProcess.MainThread::[LAUUM(CUDA)]
+----MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.483s
+----MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+----MainProcess.MainThread::[Cholesky 2] complete in 20.588s
+------MainProcess.MainThread::[MMV]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.113s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.879s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 12.037s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.506s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.593s
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 12.842s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.937s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 12.086s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 8.351s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.682s
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.243s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.880s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 11.831s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 8.194s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.639s
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.175s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.934s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 11.954s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.439s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.613s
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.142s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.879s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 11.821s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.509s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.537s
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.075s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.939s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 11.816s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 8.276s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.607s
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 13.078s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.879s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 11.683s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.655s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.570s
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')]
+--------MainProcess.MainThread::[Preconditioner kernel of size 100000. X.shape=torch.Size([100000, 28]) dev=device(type='cpu')] complete in 12.795s
+--------MainProcess.MainThread::[Cholesky 1]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 1] complete in 18.934s
+--------MainProcess.MainThread::[Copy triangular]
+--------MainProcess.MainThread::[Copy triangular] complete in 11.887s
+--------MainProcess.MainThread::[LAUUM(CUDA)]
+--------MainProcess.MainThread::[LAUUM(CUDA)] complete in 7.570s
+--------MainProcess.MainThread::[Cholesky 2]
+Using in-core POTRF
+--------MainProcess.MainThread::[Cholesky 2] complete in 20.685s
+------MainProcess.MainThread::[MMV] complete in 719.342s
+--MainProcess.MainThread::[ConjGrad] complete in 1479.569s
+MainProcess.MainThread::[Computing Falkon iterations] complete in 1479.569s
+The experiment ended on: 2026-03-24 16:54:18

@@ -1,0 +1,58 @@
+The experiment began on: 2026-05-13 01:21:18
+Loaded MillionSongs dataset in torch.float64 precision.
+Split the data into 463715 training, 51630 validation points of dimension 90.
+Data-preprocessing completed.
+Iteration 1 completed
+Iteration 2 completed
+Iteration 3 completed
+Iteration 4 completed
+Iteration 5 completed
+Iteration 6 completed
+Iteration 7 completed
+Iteration 8 completed
+Iteration 9 completed
+Iteration 10 completed
+Precision: torch.float64
+max_it = 10
+m = 400000
+m0 = 50000
+Preconditioning: Left
+Training time: 1628.8096013069153 seconds
+Inference time on the test set: 2.558124542236328 seconds
+MSE: 0.6567178276714734
+Relative Error: 0.004471489347096403
+MSE and Relative Error evolution during the iterations
+ITERATION 0
+MSE: 0.9841030091668714
+Relative Error: 0.005482464141001627
+ITERATION 1
+MSE: 0.6696989614675722
+Relative Error: 0.004514926348951367
+ITERATION 2
+MSE: 0.6589419030631801
+Relative Error: 0.004479016830557353
+ITERATION 3
+MSE: 0.6575706912263871
+Relative Error: 0.004474561911131684
+ITERATION 4
+MSE: 0.6594226207359994
+Relative Error: 0.004480584206685722
+ITERATION 5
+MSE: 0.6577694402912624
+Relative Error: 0.004475238250602906
+ITERATION 6
+MSE: 0.656883748881883
+Relative Error: 0.004471944246599079
+ITERATION 7
+MSE: 0.6566788028837957
+Relative Error: 0.004471612262772954
+ITERATION 8
+MSE: 0.6572582676859089
+Relative Error: 0.004473191419949088
+ITERATION 9
+MSE: 0.6564359644877793
+Relative Error: 0.00447075692224988
+ITERATION 10
+MSE: 0.6567178276714734
+Relative Error: 0.004471489347096403
+The experiment ended on: 2026-05-13 01:50:24

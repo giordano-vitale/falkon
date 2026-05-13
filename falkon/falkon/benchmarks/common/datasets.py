@@ -371,7 +371,7 @@ class Hdf5Dataset(BaseDataset, ABC):
 
 
 class MillionSongsDataset(KnownSplitDataset):
-    file_name = "/data/DATASETS/MillionSongs/YearPredictionMSD.mat"
+    file_name = "/leonardo_work/IscrC_GOLD-FM_0/giordano/datasets/YearPredictionMSD.mat"
     dset_name = "MillionSongs"  # type: ignore
     num_train_samples = 463715  # type: ignore
     num_test_samples = 51630  # type: ignore
@@ -402,7 +402,7 @@ class NycTaxiDataset(RandomSplitDataset, Hdf5Dataset):
 
 
 class HiggsDataset(RandomSplitDataset):
-    file_name = "/data/DATASETS/HIGGS_UCI/Higgs.mat"
+    file_name = "/leonardo_work/IscrC_GOLD-FM_0/giordano/datasets/Higgs.mat"
     dset_name = "HIGGS"  # type: ignore
     default_train_frac = 0.8  # type: ignore
 
@@ -508,7 +508,7 @@ class YelpDataset(RandomSplitDataset):
 
 
 class FlightsDataset(RandomSplitDataset, Hdf5Dataset):
-    file_name = "/data/DATASETS/FLIGHTS/flights.hdf5"  # type: ignore
+    file_name = "/leonardo_work/IscrC_GOLD-FM_0/giordano/datasets/flights.hdf5"  # type: ignore
     dset_name = "FLIGHTS"  # type: ignore
     default_train_frac = 0.666  # type: ignore
 
@@ -540,7 +540,7 @@ class FlightsDataset(RandomSplitDataset, Hdf5Dataset):
 
 
 class FlightsClsDataset(Hdf5Dataset):
-    file_name = "/data/DATASETS/FLIGHTS/flights.hdf5"  # type: ignore
+    file_name = "/leonardo_work/IscrC_GOLD-FM_0/giordano/datasets/flights.hdf5"  # type: ignore
     dset_name = "FLIGHTS-CLS"  # type: ignore
     _default_train_num = 100_000
 

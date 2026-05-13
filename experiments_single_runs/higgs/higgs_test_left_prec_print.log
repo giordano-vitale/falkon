@@ -1,0 +1,98 @@
+The experiment began on: 2026-05-13 08:31:31
+Loaded HIGGS dataset in torch.float64 precision.
+Split the data into 8800000 training, 2200000 validation points of dimension 28.
+Data-preprocessing completed.
+Iteration 1 completed
+Iteration 2 completed
+Iteration 3 completed
+Iteration 4 completed
+Iteration 5 completed
+Iteration 6 completed
+Iteration 7 completed
+Iteration 8 completed
+Iteration 9 completed
+Iteration 10 completed
+Iteration 11 completed
+Iteration 12 completed
+Iteration 13 completed
+Iteration 14 completed
+Iteration 15 completed
+Iteration 16 completed
+Iteration 17 completed
+Iteration 18 completed
+Iteration 19 completed
+Iteration 20 completed
+Precision: torch.float64
+max_it = 20
+m = 800000
+m0 = 100000
+Preconditioning: Left
+Training time: 17673.60027575493 seconds
+Inference time on the test set: 38.25187087059021 seconds
+ROC AUC: 0.828456357359421
+Accuracy: 0.75008
+ROC AUC and Accuracy evolution during the iterations
+ITERATION 0
+ROC AUC: 0.5
+Accuracy: 0.0
+ITERATION 1
+ROC AUC: 0.8006815056030687
+Accuracy: 0.7342627272727272
+ITERATION 2
+ROC AUC: 0.8159545210254299
+Accuracy: 0.7414377272727273
+ITERATION 3
+ROC AUC: 0.8206395294446414
+Accuracy: 0.744135
+ITERATION 4
+ROC AUC: 0.8223738280244197
+Accuracy: 0.7452209090909091
+ITERATION 5
+ROC AUC: 0.8236308611366139
+Accuracy: 0.7462031818181818
+ITERATION 6
+ROC AUC: 0.8245734640026985
+Accuracy: 0.7469440909090909
+ITERATION 7
+ROC AUC: 0.8252579789219121
+Accuracy: 0.7476172727272727
+ITERATION 8
+ROC AUC: 0.8258206390892688
+Accuracy: 0.7480763636363637
+ITERATION 9
+ROC AUC: 0.8262376773123874
+Accuracy: 0.74856
+ITERATION 10
+ROC AUC: 0.8265962417395497
+Accuracy: 0.7486940909090909
+ITERATION 11
+ROC AUC: 0.8269156641784601
+Accuracy: 0.7488568181818182
+ITERATION 12
+ROC AUC: 0.8271632825744077
+Accuracy: 0.7489886363636363
+ITERATION 13
+ROC AUC: 0.8273798154711334
+Accuracy: 0.7491618181818182
+ITERATION 14
+ROC AUC: 0.8276239445102438
+Accuracy: 0.7493581818181818
+ITERATION 15
+ROC AUC: 0.8278120236077827
+Accuracy: 0.7495027272727273
+ITERATION 16
+ROC AUC: 0.8279705335648152
+Accuracy: 0.7498395454545455
+ITERATION 17
+ROC AUC: 0.828108550504943
+Accuracy: 0.7499672727272727
+ITERATION 18
+ROC AUC: 0.828235077692292
+Accuracy: 0.7499790909090909
+ITERATION 19
+ROC AUC: 0.8283486551282895
+Accuracy: 0.750045
+ITERATION 20
+ROC AUC: 0.828456357359421
+Accuracy: 0.75008
+The experiment ended on: 2026-05-13 13:42:34

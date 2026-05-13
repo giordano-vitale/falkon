@@ -1,0 +1,10 @@
+The experiment began on: 2026-05-05 22:36:04
+Loaded HIGGS dataset in torch.float64 precision.
+Split the data into 8800000 training, 2200000 validation points of dimension 28.
+Data-preprocessing completed.
+[KeOps] Compiling cuda jit compiler engine ... OK
+[pyKeOps] Compiling nvrtc binder for python ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... [KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula c*Exp(Sum((a/d-b/d)**2)*-1/2) with a=Var(0,28,0), b=Var(1,28,1), c=Var(2,1,1), d=Var(3,1,2) ... OK
+OK
+OK
+OK

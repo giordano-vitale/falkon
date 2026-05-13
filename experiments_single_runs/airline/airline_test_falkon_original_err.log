@@ -1,0 +1,1 @@
+[W513 01:23:31.686790959 CublasHandlePool.cpp:335] Warning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (function operator())
